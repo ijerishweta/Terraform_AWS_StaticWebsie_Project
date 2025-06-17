@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shweta Ijeri | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #fce4ec, #e3f2fd);
+      color: #212121;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      animation: fadeDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #c2185b;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 30px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      animation: zoomIn 1s ease;
+      border: 5px solid #c2185b;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      animation: fadeUp 1s ease-out;
+    }
+
+    h2 {
+      border-left: 6px solid #8e24aa;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+      font-size: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      animation: floatCard 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      color: #7b1fa2;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #fce4ec;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes floatCard {
+      0% { transform: translateY(15px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shweta Ijeri</h1>
+    <p>Cloud & DevOps Engineer | Azure | Terraform | CI/CD | Docker</p>
+    <img src="https://terraformbucketwebsite2025-shweta123.s3.us-east-1.amazonaws.com/naruto.png"  alt="Shweta Ijeri" class="profile-pic">
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Azure Serverless App</h3>
+        <p>Developed a serverless web app using Azure Functions and Cosmos DB, integrated with Logic Apps for workflow automation.</p>
+      </div>
+      <div class="card">
+        <h3>CI/CD Pipeline with Jenkins</h3>
+        <p>Built a CI/CD pipeline using Jenkins and GitHub Actions to automate the build, test, and deployment of Node.js applications.</p>
+      </div>
+      <div class="card">
+        <h3>Infrastructure as Code</h3>
+        <p>Provisioned a 3-tier architecture in AWS using Terraform with security groups, auto-scaling, and load balancing.</p>
+      </div>
+      <div class="card">
+        <h3>Dockerized Web App</h3>
+        <p>Containerized a React + Node.js application using Docker and deployed it on Azure App Services with environment variables.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Shweta Ijeri. All rights reserved.
+  </footer>
+
+</body>
+</html>
